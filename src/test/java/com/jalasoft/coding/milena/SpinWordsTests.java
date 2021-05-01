@@ -41,6 +41,7 @@ public class SpinWordsTests {
         String expected = "Se";
         Assert.assertEquals(actual, expected);
     }
+
     /**
      * Test to spin is not executed for a word less than 5 characters
      */

@@ -7,7 +7,6 @@ public final class SpinWords {
          * delimiter by space
          */
         String[] phaseSplited = phrase.split(" ");
-
         // If the Phrase is empty
 
         if (phrase.isEmpty()) {
