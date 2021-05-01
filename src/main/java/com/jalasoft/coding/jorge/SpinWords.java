@@ -8,22 +8,23 @@ public final class SpinWords {
         //Constructor
     }
 
+    /**
+     * Set the delimiter for string.
+     */
+    public static final int MAX_LENGHT = 5;
+
+    /**
+     * @param input it is the variable that receives the string from tests.
+     * @return input reversed in methods.
+     */
     public static String reverse(final String input) {
         String res = "";
         if (input.isEmpty()) {
             return res;
         }
-       /*if (input.length() >= 5) {
-            return new StringBuilder(input).reverse().toString();
-        }*/
-        /*if(input.length()>= 5) {
-            for (int i = input.length() -1; i >= 0; i--) {
-                res = res + input.charAt(i);
-            }
-        }*/
-        return Pattern.compile(" +").splitAsStream(input)
-                .map(word -> word.length() < 5 ? word : new StringBuilder(word).reverse())
+        res = Pattern.compile(" +").splitAsStream(input)
+                .map(word -> word.length() < MAX_LENGHT ? word : new StringBuilder(word).reverse())
                 .collect(Collectors.joining(" "));
-
+        return res;
     }
 }

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class SpinWordsTest {
 
     /**
-     * Empty string test
+     * Empty string test.
      */
     @Test
     public void reverseEmptyStringTest() {
@@ -15,8 +15,9 @@ public class SpinWordsTest {
         String expected = "";
         Assert.assertEquals(actual, expected);
     }
+
     /**
-     * Reverse Single Letter Test
+     * Reverse Single Letter Test.
      */
     @Test
     public void singleLetterTest() {
@@ -27,7 +28,7 @@ public class SpinWordsTest {
     }
 
     /**
-     * Entire words and spaces only the words with length major or equal than 5 are reversed
+     * Entire words and spaces only the words with length major or equal than 5 are reversed.
      */
     @Test
     public void reverseSentenceTest1() {
@@ -36,8 +37,9 @@ public class SpinWordsTest {
         String expected = "Hey wollef sroirraw";
         Assert.assertEquals(actual, expected);
     }
+
     /**
-     * Entire words and spaces only the words with length major or equal than 5 are reversed
+     * Entire words and spaces only the words with length major or equal than 5 are reversed.
      */
     @Test
     public void reverseSentenceTest2() {
@@ -46,8 +48,9 @@ public class SpinWordsTest {
         String expected = "Hey wollef sroirraw";
         Assert.assertEquals(actual, expected);
     }
+
     /**
-     * Entire words and spaces only the words with length major or equal than 5 are reversed
+     * Entire words and spaces only the words with length major or equal than 5 are reversed.
      */
     @Test
     public void reverseSentenceTest3() {
