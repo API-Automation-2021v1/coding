@@ -13,7 +13,6 @@ public final class SpinWords {
         if (phrase.isEmpty()) {
             return words;
         }
-
         // Here we spin the word only if the characters are more than 5
         for (int i = 0; i < phaseSplited.length; i++)
             if (!(phaseSplited[i].length() <= 5)) {

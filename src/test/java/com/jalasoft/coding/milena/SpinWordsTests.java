@@ -19,7 +19,6 @@ public class SpinWordsTests {
         Assert.assertEquals(actual, expected);
     }
 
-
     /**
      * Test to spin is not executed with a word with a single letter.
      */
