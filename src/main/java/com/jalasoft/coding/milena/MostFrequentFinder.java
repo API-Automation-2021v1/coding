@@ -38,15 +38,10 @@ public class MostFrequentFinder {
             }
 
         }
+       // to get the maxNumber in the map
         OptionalInt maxNumber = counters.values().stream().mapToInt(i -> i).max();
-        for (var entry : counters.entrySet()) {
-            if (entry.getValue() == maxNumber.getAsInt()) {
-                return entry.getKey();
-            }
 
-        }
-        return 0;
-
+        return maxNumber.getAsInt();
 
     }
 }

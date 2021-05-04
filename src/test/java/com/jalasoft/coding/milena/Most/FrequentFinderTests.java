@@ -2,30 +2,34 @@ package com.jalasoft.coding.milena.Most;
 
 import com.jalasoft.coding.milena.MostFrequentFinder;
 import org.testng.annotations.Test;
-
 import static org.testng.AssertJUnit.assertEquals;
 
 public class FrequentFinderTests {
     /**
-     * This is the constant for a array of integers.
-     */
-    private static final int[] INPUT = new int[]{1, 5, 0, 8, 8, 7};
-    /**
-     * this is a constant for a expected result.
-     */
-    private static final int EXPECTED = 8;
-    /**
      * This test verify that the most frequent item for collection is returned.
      */
+
     @Test
-
-    public void shouldFindMostFrequentNumber() {
-
+    public void findMostFrequentNumberInArrayTest() {
+        final int[] input = new int[]{3, -1, -1, -1, 2, 3, 3, -1, 2, 4, 9, 3};
         var finder = new MostFrequentFinder();
-        int result = finder.findMostFrequentItem(INPUT);
+        int result = finder.findMostFrequentItem(input);
+        final int expected = 4;
+        assertEquals(expected, result);
 
-        assertEquals(EXPECTED, result);
+    }
 
+
+    /**
+     * Test to Verify the most frequent item in an Empty Array.
+     */
+    @Test
+    public void findMostFrequentNumberEmptyArrayTest() {
+        final int[] input = new int[0];
+        var finder = new MostFrequentFinder();
+        int result = finder.findMostFrequentItem(input);
+        int expected = 0;
+        assertEquals(expected, result);
     }
 
 }
