@@ -1,3 +1,4 @@
+/*
 package com.jalasoft.coding.jorge;
 
 import java.util.regex.Pattern;
@@ -8,15 +9,19 @@ public final class SpinWords {
         //Constructor
     }
 
-    /**
+    */
+/**
      * Set the delimiter for string.
-     */
+     *//*
+
     public static final int MAX_LENGHT = 5;
 
-    /**
+    */
+/**
      * @param input it is the variable that receives the string from tests.
      * @return input reversed in methods.
-     */
+     *//*
+
     public static String reverse(final String input) {
         String res = "";
         if (input.isEmpty()) {
@@ -28,3 +33,4 @@ public final class SpinWords {
         return res;
     }
 }
+*/
