@@ -1,6 +1,6 @@
 package com.jalasoft.coding.Susana;
 
-public class ReverseString {
+public final class ReverseString {
 
     /**
      * Constructor.

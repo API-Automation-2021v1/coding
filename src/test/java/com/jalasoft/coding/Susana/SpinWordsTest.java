@@ -4,12 +4,18 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
- * Library test class.
+ * Spin Words test class.
  */
-public class SpinWordsTest {
+public final class SpinWordsTest {
 
     /**
-     * Verify some library method.
+     * Constructor.
+     */
+    private SpinWordsTest() {
+    }
+
+    /**
+     * Verify spin words with "Hey fellow warriors" sentence.
      */
     @Test
     public static void test1SpinWordsMethod() {
@@ -19,6 +25,9 @@ public class SpinWordsTest {
         Assert.assertEquals(actual, expected);
     }
 
+    /**
+     * Verify spin words with "This is a test" sentence.
+     */
     @Test
     public static void test2SpinWordsMethod() {
         String input = "This is a test";
@@ -27,6 +36,9 @@ public class SpinWordsTest {
         Assert.assertEquals(actual, expected);
     }
 
+    /**
+     * Verify spin words with "This is another test" sentence.
+     */
     @Test
     public static void test3SpinWordsMethod() {
         String input = "This is another test";
