@@ -16,7 +16,7 @@ public class SpinWords {
         String word;
         String invertedWord;
         sentenceArray = sentence.split(" ");
-        for (int i = 0; i <= (sentenceArray.length -1); i++) {
+        for (int i = 0; i <= (sentenceArray.length - 1); i++) {
             word = sentenceArray[i];
             if (word.length() >= NUM) {
                 invertedWord = "";
@@ -28,6 +28,6 @@ public class SpinWords {
                 invertedSentence = invertedSentence + " " + word;
             }
         }
-        return  invertedSentence.replaceFirst(" ","");
+        return  invertedSentence.replaceFirst(" ", "");
     }
 }
